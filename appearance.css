@@ -1,3 +1,14 @@
 .logo {
   background-color: red;
 }
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 30px;
+  font-size: 1.4em
+}
+
+li:hover{
+  background-color: rgb(208, 131, 121);
+}
