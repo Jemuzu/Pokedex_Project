@@ -1,16 +1,35 @@
+@font-face {
+  font-family: 'pokemon_hollownormal';
+  src: url('pokemonhollow-webfont.woff2') format('woff2'),
+    url('pokemonhollow-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pokemon_solidnormal';
+  src: url('pokemonsolid-webfont.woff2') format('woff2'),
+    url('pokemonsolid-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logo {
   background-color: red;
+
 }
 
 li {
   list-style-type: none;
   display: inline-block;
-  margin: 50px;
+  margin: 20px;
   font-size: 1.9em;
+  font-family: 'pokemon_hollownormal';
 }
 
 li:hover {
-  background-color: rgb(208, 131, 121);
+  background-color: #720000;
+  font-family: 'pokemon_solidnormal'
 }
 
 .btn-hidden {
@@ -18,34 +37,29 @@ li:hover {
   border: 2px solid;
   color: #8b0000;
   padding: 20px 60px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-family: 'pokemon_solidnormal';
+  font-size: 20px;
+  float: right;
+  position: relative;
+  down: 100px;
 }
 
 .btn-hidden:hover {
-  background-color: blue;
+  background-color: #720000;
 }
 
 body {
   background-image: url("https://previews.123rf.com/images/logvinyk/logvinyk1609/logvinyk160923019/63715185-pokeball-icon-sign-seamless-pattern-on-a-gray-background-vector-illustration.jpg")
 }
 
-}
-p {
-  font-family: 'pokemon_solidnormal'
-}
 
-@font-face {
-    font-family: 'pokemon_hollownormal';
-    src: url('pokemonhollow-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+h1 {
+  font-family: 'pokemon_solidnormal';
+  text-align: center;
 }
 
-@font-face {
-    font-family: 'pokemon_solidnormal';
-    src: url('pokemonsolid-webfont.woff2') format('woff2'),
-    font-weight: normal;
-    font-style: normal;
+a {
+  color: black;
+  text-decoration: none;
+}
