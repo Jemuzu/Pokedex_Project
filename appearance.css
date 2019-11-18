@@ -5,10 +5,47 @@
 li {
   list-style-type: none;
   display: inline-block;
-  margin: 30px;
-  font-size: 1.4em
+  margin: 50px;
+  font-size: 1.9em;
 }
 
-li:hover{
+li:hover {
   background-color: rgb(208, 131, 121);
 }
+
+.btn-hidden {
+  background-color: red;
+  border: 2px solid;
+  color: #8b0000;
+  padding: 20px 60px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn-hidden:hover {
+  background-color: blue;
+}
+
+body {
+  background-image: url("https://previews.123rf.com/images/logvinyk/logvinyk1609/logvinyk160923019/63715185-pokeball-icon-sign-seamless-pattern-on-a-gray-background-vector-illustration.jpg")
+}
+
+}
+p {
+  font-family: 'pokemon_solidnormal'
+}
+
+@font-face {
+    font-family: 'pokemon_hollownormal';
+    src: url('pokemonhollow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pokemon_solidnormal';
+    src: url('pokemonsolid-webfont.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
