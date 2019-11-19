@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: red;
-  height: 35px;
+  height: 60px;
   list-style-type: none;
   border: 1.5px solid;
   border-color: #8b0000;
@@ -34,7 +34,7 @@ div:nth-child(1) {}
 
 
 
-.btn-wrapper{
+.header{
   display: grid
   grid template-columns: 1fr;
   background-color: #ffffff;
@@ -66,9 +66,10 @@ background-position: fixed;
 button {
   background-color: red;
   padding: 20px;
-  width: 300px;
-  border-color: red;
-  align-items: center;
+  width: 200px;
+  border-color: white;
+  text-align: center;
+  height: 25px
 }
 
 .btn-trainer {
@@ -79,13 +80,16 @@ button {
   font-family: 'pokemon_solidnormal'
 }
 
+.container {
+  background-color: red;
+}
+
 
 p {
   font-family: 'pokemon_solidnormal';
   color: yellow;
-  position: absolute;
   font-size: 2em;
-
+  text-align: center;
 }
 
 a {
