@@ -2,7 +2,7 @@
   font-family: 'pokemon_hollownormal';
   src: url('pokemonhollow-webfont.woff2') format('woff2'),
     url('pokemonhollow-webfont.woff') format('woff');
-  font-weight: normal;
+  font-dweight: normal;
   font-style: normal;
 }
 
@@ -14,57 +14,48 @@
   font-style: normal;
 }
 
-.logo {
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: red;
-  border: 1.5px solid;
-  color: #720000;
-}
-
-li {
+  height: 35px;
   list-style-type: none;
-  display: inline-block;
-  margin: 5px;
-  font-size: 1.9em;
-  font-family: 'pokemon_hollownormal';
-  letter-spacing: -1px;
-  height: 100%;
+  border: 1.5px solid;
+  border-color: #8b0000;
+  font-family: 'pokemon_hollownormal'
 }
 
-li:hover {
-  background-color: #720000;
-  font-family: 'pokemon_solidnormal'
+.wrapper > div{
+  padding:1em;
+  font-family: 'pokemon_hollownormal'
 }
 
-.btn-pokedex {
-  background-color: red;
+div:nth-child(1) {}
+
+
+
+.btn-wrapper{
+  display: grid
+  grid template-columns: 1fr;
+  background-color: #ffffff;
   border: 2px solid;
   color: #8b0000;
-  padding: 20px 60px;
-  font-family: 'pokemon_solidnormal';
+  padding: 5px;
   font-size: 20px;
-  position: absolute;
-  top: 550px;
-  left: 920px;
+  align-items: center;
+  height: 35px;
 }
+
 
 .btn-pokedex:hover {
   background-color: #720000;
+  font-family: pokemon_solidnormal;
 }
 
-.btn-trainer {
-  background-color: red;
-  border: 2px solid;
-  color: #8b0000;
-  padding: 20px 60px;
-  font-family: 'pokemon_solidnormal';
-  font-size: 20px;
-  position: absolute;
-  top: 550px;
-  right: 920px;
-}
 
 .btn-trainer:hover {
   background-color: #720000;
+  font-family: pokemon_solidnormal;
 }
 
 body {
@@ -72,11 +63,29 @@ body {
 background-position: fixed;
 }
 
+button {
+  background-color: red;
+  padding: 20px;
+  width: 300px;
+  border-color: red;
+  align-items: center;
+}
+
+.btn-trainer {
+  font-family: 'pokemon_solidnormal'
+}
+
+.btn-pokedex {
+  font-family: 'pokemon_solidnormal'
+}
 
 
-h1 {
+p {
   font-family: 'pokemon_solidnormal';
-  text-align: center;
+  color: yellow;
+  position: absolute;
+  font-size: 2em;
+
 }
 
 a {
