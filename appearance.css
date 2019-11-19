@@ -16,15 +16,18 @@
 
 .logo {
   background-color: red;
-
+  border: 1.5px solid;
+  color: #720000;
 }
 
 li {
   list-style-type: none;
   display: inline-block;
-  margin: 20px;
+  margin: 5px;
   font-size: 1.9em;
   font-family: 'pokemon_hollownormal';
+  letter-spacing: -1px;
+  height: 100%;
 }
 
 li:hover {
@@ -32,7 +35,7 @@ li:hover {
   font-family: 'pokemon_solidnormal'
 }
 
-.btn-hidden {
+.btn-pokedex {
   background-color: red;
   border: 2px solid;
   color: #8b0000;
@@ -40,25 +43,40 @@ li:hover {
   font-family: 'pokemon_solidnormal';
   font-size: 20px;
   position: absolute;
-  top: 530px;
-  left: 500px;
+  top: 550px;
+  left: 920px;
 }
 
-.btn-hidden:hover {
+.btn-pokedex:hover {
+  background-color: #720000;
+}
+
+.btn-trainer {
+  background-color: red;
+  border: 2px solid;
+  color: #8b0000;
+  padding: 20px 60px;
+  font-family: 'pokemon_solidnormal';
+  font-size: 20px;
+  position: absolute;
+  top: 550px;
+  right: 920px;
+}
+
+.btn-trainer:hover {
   background-color: #720000;
 }
 
 body {
-  background-image: url("https://previews.123rf.com/images/logvinyk/logvinyk1609/logvinyk160923019/63715185-pokeball-icon-sign-seamless-pattern-on-a-gray-background-vector-illustration.jpg")
+  background-image: url("https://www.wallpaperflare.com/static/364/185/316/pok%C3%A9mon-pok%C3%A9-balls-artwork-pokeball-wallpaper.jpg");
+background-position: fixed;
 }
 
 
 
 h1 {
   font-family: 'pokemon_solidnormal';
-  position: absolute;
-  top: 200px
-  left: 200px
+  text-align: center;
 }
 
 a {
