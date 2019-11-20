@@ -2,7 +2,7 @@
   font-family: 'pokemon_hollownormal';
   src: url('pokemonhollow-webfont.woff2') format('woff2'),
     url('pokemonhollow-webfont.woff') format('woff');
-  font-dweight: normal;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -30,9 +30,6 @@
   font-family: 'pokemon_hollownormal'
 }
 
-div:nth-child(1) {}
-
-
 
 .header{
   display: grid
@@ -42,8 +39,8 @@ div:nth-child(1) {}
   color: #8b0000;
   padding: 5px;
   font-size: 20px;
-  align-items: center;
   height: 35px;
+  text-align: center;
 }
 
 
@@ -68,10 +65,10 @@ button {
   padding: 20px;
   width: 200px;
   border-color: white;
-  text-align: center;
-  height: 25px
+  height: 25px;
 }
 
+}
 .btn-trainer {
   font-family: 'pokemon_solidnormal'
 }
@@ -80,8 +77,15 @@ button {
   font-family: 'pokemon_solidnormal'
 }
 
-.container {
+.containers {
   background-color: red;
+  border: 4px solid;
+  border-color: #8b0000;
+  height: 20px;
+}
+
+li:hover {
+background-color: #8b0000;
 }
 
 
@@ -95,4 +99,114 @@ p {
 a {
   color: black;
   text-decoration: none;
+}
+
+
+.poke-container {
+width: 80%;
+display: block;
+margin: 100px auto;
+text-align: center;
+}
+
+.poke-ball {
+display: inline-block;
+margin: 20px;
+width: 100px;
+height: 100px;
+background: #b71c1c;
+border-radius: 50%;
+box-shadow:  inset 0 -72px 0 -37px #fff, inset 0 -76px 0 -35px #000, 0 0 0 5px #000;
+position: relative;
+transition: .4s;
+transform-origin: bottom center;
+// Remove mobile tab color
+-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+&:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #fff;
+  top: 50px;
+  left: 40px;
+  border: 1px solid rgba(0,0,0,.4);
+  box-shadow: 2px 0 0 0 rgba(0,0,0,0.2), 0 0 0 5px #fff, 0 0 0 10px #000;
+}
+
+&:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
+  box-shadow:  inset -7px 0 5px 0 rgba(0,0,0,.4);
+}
+
+&:hover {
+  cursor: pointer;
+  animation: anti-wiggle 1s ease-in-out;
+}
+
+&:hover:after {
+  animation: wiggle 1s ease-in-out;
+}
+
+&:focus, &:active {
+  outline: 0;
+}
+
+}
+
+@keyframes wiggle {
+20% {
+  box-shadow:  inset -5px 0 5px 0 rgba(0,0,0,.4);
+  transform: rotate(7deg);
+}
+
+40% {
+  box-shadow:  inset -11px 0 5px 0 rgba(0,0,0,.4);
+  transform: rotate(-14deg);
+}
+
+60% {
+  box-shadow:  inset -5px 0 5px 0 rgba(0,0,0,.4);
+  transform: rotate(4deg);
+}
+
+80% {
+  box-shadow:  inset -8px 0 5px 0 rgba(0,0,0,.4);
+  transform: rotate(-2deg);
+}
+
+100% {
+  box-shadow:  inset -7px 0 5px 0 rgba(0,0,0,.4);
+  transform: rotate(0deg);
+}
+}
+
+@keyframes anti-wiggle {
+20% {
+  transform: translateX(4px) rotate(-7deg);
+}
+
+40% {
+  transform: translateX(-8px)  rotate(14deg);
+}
+
+60% {
+  transform: translateX(2px)  rotate(-4deg);
+}
+
+80% {
+  transform: translateX(-1px)  rotate(2deg);
+}
+
+100% {
+  transform: translateX(0px) rotate(0deg);
+}
 }

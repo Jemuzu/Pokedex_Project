@@ -14,6 +14,6 @@ function loadDoc() {
      document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.open("GET"," "https://fizal.me/pokeapi/api/v2/id/706.json", true);
   xhttp.send();
 }
