@@ -6,14 +6,16 @@
 // alert("Hi, welcome to the world of Pokemon!");
 
 // alert("Humans and Pokemon live together in harmony!")
+for (let i = 0; i <= 50; i++) {
+ const url = `https://fizal.me/pokeapi/api/v2/id/${i}.json`;
+ fetch(url)
+    .then(res5 => res5.json())
+   .then(res5 => {
+     console.log(res5.name)
+   });
+}
 
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET"," "https://fizal.me/pokeapi/api/v2/id/706.json", true);
-  xhttp.send();
+Class trainer() {
+  constructor()
+  pokemon=[]
 }

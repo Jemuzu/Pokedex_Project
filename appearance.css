@@ -1,4 +1,4 @@
-@font-face {
+                                                                                                                                                                     @font-face {
   font-family: 'pokemon_hollownormal';
   src: url('pokemonhollow-webfont.woff2') format('woff2'),
     url('pokemonhollow-webfont.woff') format('woff');
@@ -18,16 +18,30 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: red;
-  height: 60px;
+  height: 65px;
+  font-size: 1.9em;
+  padding-left: 30px;
   list-style-type: none;
   border: 1.5px solid;
   border-color: #8b0000;
   font-family: 'pokemon_hollownormal'
 }
 
+li {
+  text-align: center;
+  color: white;
+}
+
+li:hover{
+  font-family: 'pokemon_solidnormal'
+  color: white;
+}
+
 .wrapper > div{
   padding:1em;
   font-family: 'pokemon_hollownormal'
+  border: 6px;
+  border-color: #8b0000;
 }
 
 
@@ -40,7 +54,6 @@
   padding: 5px;
   font-size: 20px;
   height: 35px;
-  text-align: center;
 }
 
 
@@ -57,24 +70,28 @@
 
 body {
   background-image: url("https://www.wallpaperflare.com/static/364/185/316/pok%C3%A9mon-pok%C3%A9-balls-artwork-pokeball-wallpaper.jpg");
-background-position: fixed;
+background-position: center;
 }
 
 button {
-  background-color: red;
-  padding: 20px;
-  width: 200px;
+  background-color: #f4511e;
+  padding: 25px;
+  margin: 30px;
+  width: 150px;
   border-color: white;
-  height: 25px;
+  font-family: 'pokemon_hollownormal'
 }
 
-}
-.btn-trainer {
-  font-family: 'pokemon_solidnormal'
+.btn-pokedex{
+  float: left;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.btn-pokedex {
-  font-family: 'pokemon_solidnormal'
+.btn-trainer{
+  float: right;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .containers {
@@ -92,7 +109,7 @@ background-color: #8b0000;
 p {
   font-family: 'pokemon_solidnormal';
   color: yellow;
-  font-size: 2em;
+  font-size: 2.1em;
   text-align: center;
 }
 
@@ -101,8 +118,7 @@ a {
   text-decoration: none;
 }
 
-
-.poke-container {
+/* .poke-container {
 width: 80%;
 display: block;
 margin: 100px auto;
@@ -164,27 +180,27 @@ transform-origin: bottom center;
 
 @keyframes wiggle {
 20% {
-  box-shadow:  inset -5px 0 5px 0 rgba(0,0,0,.4);
+  box-shadow: inset -5px 0 5px 0 rgba(0,0,0,.4);
   transform: rotate(7deg);
 }
 
 40% {
-  box-shadow:  inset -11px 0 5px 0 rgba(0,0,0,.4);
+  box-shadow: inset -11px 0 5px 0 rgba(0,0,0,.4);
   transform: rotate(-14deg);
 }
 
 60% {
-  box-shadow:  inset -5px 0 5px 0 rgba(0,0,0,.4);
+  box-shadow: inset -5px 0 5px 0 rgba(0,0,0,.4);
   transform: rotate(4deg);
 }
 
 80% {
-  box-shadow:  inset -8px 0 5px 0 rgba(0,0,0,.4);
+  box-shadow: inset -8px 0 5px 0 rgba(0,0,0,.4);
   transform: rotate(-2deg);
 }
 
 100% {
-  box-shadow:  inset -7px 0 5px 0 rgba(0,0,0,.4);
+  box-shadow: inset -7px 0 5px 0 rgba(0,0,0,.4);
   transform: rotate(0deg);
 }
 }
