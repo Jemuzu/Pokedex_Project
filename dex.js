@@ -19,7 +19,16 @@ class trainer {
   constructor() {
   pokemon=[]
   this.id
-  this.name
-  this.sprite
-  this.type
+  this.abilities
+
+  let pokemon= new Pokemon()
 }};
+
+function navBar() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
