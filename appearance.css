@@ -1,4 +1,4 @@
-                                                                                                                                                                     @font-face {
+@font-face {
   font-family: 'pokemon_hollownormal';
   src: url('pokemonhollow-webfont.woff2') format('woff2'),
     url('pokemonhollow-webfont.woff') format('woff');
@@ -16,32 +16,38 @@
 
 .wrapper{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: red;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #E3350D;
   height: 65px;
-  font-size: 1.9em;
-  padding-left: 30px;
+  border-right
   list-style-type: none;
-  border: 1.5px solid;
-  border-color: #8b0000;
-  font-family: 'pokemon_hollownormal'
+  font-family: 'pokemon_hollownormal';
+  border-bottom: 4px solid;
+  border-bottom-color: #8b0000;
+  margin-left: 160px;
+  width: 900px;
+
 }
 
 li {
   text-align: center;
+  font-size: 1em;
+  list-style-type: none;
   color: white;
+  border-right: 1.5px solid;
+  border-color: green;
+  padding-top: 30px;
 }
 
 li:hover{
-  font-family: 'pokemon_solidnormal'
-  color: white;
+  background-color: white;
+  font-family: 'pokemon_solidnormal';
+
 }
 
 .wrapper > div{
   padding:1em;
-  font-family: 'pokemon_hollownormal'
-  border: 6px;
-  border-color: #8b0000;
+  font-family: 'pokemon_hollownormal';
 }
 
 
@@ -49,7 +55,6 @@ li:hover{
   display: grid
   grid template-columns: 1fr;
   background-color: #ffffff;
-  border: 2px solid;
   color: #8b0000;
   padding: 5px;
   font-size: 20px;
@@ -74,7 +79,7 @@ background-position: center;
 }
 
 button {
-  background-color: #f4511e;
+  background-color: #E3350D;
   padding: 25px;
   margin: 30px;
   width: 150px;
@@ -101,11 +106,6 @@ button {
   height: 20px;
 }
 
-li:hover {
-background-color: #8b0000;
-}
-
-
 p {
   font-family: 'pokemon_solidnormal';
   color: yellow;
@@ -116,6 +116,7 @@ p {
 a {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* .poke-container {
