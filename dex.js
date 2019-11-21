@@ -6,7 +6,7 @@
 // alert("Hi, welcome to the world of Pokemon!");
 
 // alert("Humans and Pokemon live together in harmony!")
-for (let i = 0; i <= 50; i++) {
+for (let i = 0; i <= 100; i++) {
  const url = `https://fizal.me/pokeapi/api/v2/id/${i}.json`;
  fetch(url)
     .then(res5 => res5.json())
@@ -15,7 +15,11 @@ for (let i = 0; i <= 50; i++) {
    });
 }
 
-Class trainer() {
-  constructor()
+class trainer {
+  constructor() {
   pokemon=[]
-}
+  this.id
+  this.name
+  this.sprite
+  this.type
+}};
