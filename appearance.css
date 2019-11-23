@@ -30,14 +30,23 @@ li {
   text-align: center;
   font-size: 1em;
   list-style-type: none;
-  padding-top: 32px;
+  padding-top: 26px;
 }
 
 li:nth-child(odd) {
   font-family: 'pokemon_solidnormal';
   background-color: red;
-  border-bottom: 4px solid;
+  border-bottom: 5px solid;
   border-bottom-color: #720000;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
+}
+
+li:nth-child(even) {
+  font-family: 'pokemon_solidnormal';
+  background-color: blue;
+  border-bottom: 5px solid;
+  border-bottom-color: #00008b;
   border-right: 1.5px solid;
   border-left: 1.5px solid;
 }
@@ -47,17 +56,8 @@ img:hover {
 }
 
 
-li:nth-child(even) {
-  font-family: 'pokemon_solidnormal';
-  background-color: blue;
-  border-bottom: 4px solid;
-  border-bottom-color: #00008b;
-  border-right: 1.5px solid;
-  border-left: 1.5px solid;
-}
-
 li:hover:nth-child(odd) {
-  background: color: #720000;
+  background-color: #720000;
 }
 
 li:hover:nth-child(even) {
