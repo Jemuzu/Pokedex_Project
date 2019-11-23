@@ -21,8 +21,6 @@
   height: 65px;
   list-style-type: none;
   font-family: 'pokemon_hollownormal';
-  border-bottom: 4px solid;
-  border-bottom-color: #8b0000;
   margin-left: 160px;
   width: 1000px;
   z-index: 5;
@@ -32,44 +30,38 @@ li {
   text-align: center;
   font-size: 1em;
   list-style-type: none;
-  color: white;
-  border-right: 1.5px solid;
-  border-color: #303030;
   padding-top: 32px;
 }
 
-li:hover:nth-child(-n + 1) {
+li:nth-child(odd) {
   font-family: 'pokemon_solidnormal';
-}
-
-li:hover:nth-child(-n + 2) {
-  background-color: pink;
-  font-family: 'pokemon_solidnormal';
-}
-
-li:hover:nth-child(-n + 3) {
-  background-color: #720000;
-  font-family: 'pokemon_solidnormal';
-}
-
-li:hover:nth-child(-n + 4) {
   background-color: red;
-  font-family: 'pokemon_solidnormal';
+  border-bottom: 4px solid;
+  border-bottom-color: #720000;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
 }
 
-li:hover:nth-child(-n + 5) {
-  background-color: red;
-  font-family: 'pokemon_solidnormal';
+img:hover {
+  opacity: 0.2;
 }
 
-li:hover:nth-child(-n + 6) {
-  background-color: red;
+
+li:nth-child(even) {
   font-family: 'pokemon_solidnormal';
+  background-color: blue;
+  border-bottom: 4px solid;
+  border-bottom-color: #00008b;
+  border-right: 1.5px solid;
+  border-left: 1.5px solid;
 }
 
-li:hover:nth-child(-n + 7) {
-  background-color: red;
-  font-family: 'pokemon_solidnormal';
+li:hover:nth-child(odd) {
+  background: color: #720000;
+}
+
+li:hover:nth-child(even) {
+  background-color: #00008b;
 }
 
 .navbar>div {
@@ -105,7 +97,8 @@ button {
   background-color: #E3350D;
   padding: 25px;
   margin: 30px;
-  width: 150px;
+  width: 160px;
+  height: 100px;
   border-color: white;
   font-family: 'pokemon_hollownormal'
 }
@@ -134,6 +127,7 @@ p {
   color: #E3350D;
   font-size: 2.1em;
   text-align: center;
+  color: blue;
 }
 
 a {
