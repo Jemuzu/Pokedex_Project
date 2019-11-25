@@ -49,10 +49,11 @@ class Pokemon {
     this.name = data.name;
     this.defense = data.stats[3].base_stat
     this.attack = data.stats[4].base_stat
-    this.hp= data.stats[5].base_stat
+    this.hp = data.stats[5].base_stat
+    this.abilities 
+    }
     //this.abilities = abilities//
   }
-}
 
 function TrainerName() {
   prompt('Please enter your trainer name:')
@@ -68,9 +69,3 @@ queryPokemonAPI(id2)
   var id3 =  prompt('Please enter a third pokemon id:')
 queryPokemonAPI(id3)
   }
-
-  all()
-   let id = 0; id <= trainer.pokemonlist id++ 
-  return pokemon[id]
-     }
-   }
