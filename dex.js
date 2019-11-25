@@ -22,7 +22,10 @@ queryPokemonAPI = (id) => {
   const url = `https://fizal.me/pokeapi/api/v2/id/${id}.json`;
   fetch(url)
     .then(resp => resp.json())
-    .then(pokemon => {
+    .then(data => {
+
+      pokemon = new Pokemon(data)
+      trainer.pokemonlist.push(pokemon)
       //hp = Pokemon
       //attack =
       //speed =
@@ -33,22 +36,23 @@ queryPokemonAPI = (id) => {
     })
   }
 
-class Trainer {
-  constructor(name, hp, attack, speed, defense, abilities) {
-    Pokemon = []
-    this.name = pokemon.name;
-    pokemon.stats[3].base_stat
-    pokemon.stats[4].base_stat
-    pokemon.stats[5].base_stat
-    this.hp = hp
-    this.attack = attack
-    this.speed = speed
-    this.defense = defense
-    this.abilities = abilities
 
+class Trainer {
+  constructor(name) {
+    this.name = name;
+    this.pokemonlist = []
     }
   }
-
+  trainer = new Trainer('James')
+class Pokemon {
+  constructor(data){
+    this.name = data.name;
+    this.defense = data.stats[3].base_stat
+    this.attack = data.stats[4].base_stat
+    this.hp= data.stats[5].base_stat
+    //this.abilities = abilities//
+  }
+}
 
 function TrainerName() {
   prompt('Please enter your trainer name:')
@@ -65,8 +69,8 @@ queryPokemonAPI(id2)
 queryPokemonAPI(id3)
   }
 
-  // all(){
-  //   for(let i = 0; i <= pokemon.length i++ ){
-  //     return pokemon[i]
-  //   }
-  // }
+  all()
+   let id = 0; id <= trainer.pokemonlist id++ 
+  return pokemon[id]
+     }
+   }
