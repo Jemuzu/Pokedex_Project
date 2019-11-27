@@ -29,17 +29,17 @@ queryPokemonAPI = (id) => {
 function greetingTrainer(data) {
   var text;
   var text2;
-  var text3;
+  //var text3;//
   var trainerName = prompt('Enter your name', "");
   if (trainerName == null || trainerName == undefined || trainerName == "") {
     text = "You must enter your name, Trainer!"
   } else {
     text = `Hi ${trainerName}, Welcome to the world of Pokemon, You are about to embark on your Pokemon journey!`
     text2 = `Create your Pokemon team, ${trainerName}`
-    text3 = `${trainerName}'s Pokemon team is: ${trainer}`
+    //text3 = `${trainerName}'s Pokemon team is: ${trainer}`//
     document.getElementById("Greeting").innerHTML = text2;
     document.getElementById("changetoName").innerHTML = text;
-    document.getElementById("pokedex").innerHTML = text3;
+    //document.getElementById("pokedex").innerHTML = text3;//
     // let trainer = new trainer(trainerName)
   }
 }
@@ -71,7 +71,7 @@ class Pokemon {
     this.hp = data.stats[5].base_stat
     this.abilities = data.abilities[0].ability.name
 
-    var text6;
+    /*var text6;
     var text7;
     var text8;
 
@@ -81,9 +81,10 @@ class Pokemon {
     document.getElementById("hp").innerHTML = text6;
     document.getElementById("def").innerHTML = text7;
     document.getElementById("abilities").innerHTML = text8;
-  }
+  }*/
 }
 
+}
 function TrainerName() {
   prompt('Please enter your trainer name:')
 }
