@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,13 +10,13 @@
 
 <body>
   <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img1" /></a>
-    <a href="about.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img2" /></a>
-      <a href="contact.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img3" /></a>
-        <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img4" /></a>
-          <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img5" /></a>
-            <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img6"/></a>
-              <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img7"/></a>
-<div class="navbar">
+  <a href="about.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img2" /></a>
+  <a href="contact.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img3" /></a>
+  <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img4" /></a>
+  <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img5" /></a>
+  <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img6" /></a>
+  <a href="mainpage.html"><img src="https://icon-library.net//images/poke-ball-icon/poke-ball-icon-0.jpg" class="img7" /></a>
+  <div class="navbar">
     <li><a href="mainpage.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -27,26 +26,29 @@
     <li><a href="mainpage.html">Placeholder</a></li>
   </div>
   <div class="header">
-    <p id="changetoName">Click below to start your journey</p>
   </div>
+  <p id="changetoName">Click below to start your journey</p>
   <br>
   <p id="Greeting"></p>
   <div class="btns">
-    <button type="button" onclick= getPokemonName() class="btn-pokedex">Pokemon Team</button>
-    <button type="button" onclick= greetingTrainer() class="btn-trainer">Create Trainer</button>
+    <button type="button" onclick=getPokemonName() class="btn-pokedex">Pokemon Team</button>
+    <button type="button" onclick=greetingTrainer() class="btn-trainer">Create Trainer</button>
   </div>
   <div class="containers">
     <p></p>
-    <p id="pokedex">Your team is</p>
+    <p id="pokedex"></p>
     <div class="poke-border">
       <p id="Pokemon"></p>
     </div>
   </div>
-  <div class="poke-container">
-    <div class="poke-ball"></div>
-    <div class="poke-ball"></div>
-    <div class="poke-ball"></div>
+  <div id="poke-container">
+    <div id="name"></div>
+    <div id="abilities"></div>
+    <div id="hp"></div>
+    <div id="atk"></div>
+    <div id="def"></div>
   </div>
+
 </body>
 <script src=dex.js>
 </script>

@@ -187,6 +187,44 @@ a {
   left: 1085px;
 }
 
+#name {
+  font-family: pokemon_solidnormal;
+  color: yellow;
+}
+
+
+
+#atk {
+  font-family: pokemon_solidnormal;
+  color: yellow;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+#hp {
+  font-family: pokemon_solidnormal;
+  color: yellow;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+#def {
+  font-family: pokemon_solidnormal;
+  color: yellow;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+
+#abilities {
+  font-family: pokemon_solidnormal;
+  color: yellow;
+  font-size: 2em;
+}
+
 /* .poke-container {
 width: 80%;
 display: block;
