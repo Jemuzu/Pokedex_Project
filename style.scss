@@ -1,26 +1,23 @@
+/*# sourceMappingURL=style.css.map */
 @font-face {
-  font-family: 'pokemon_hollownormal';
-  src: url('pokemonhollow-webfont.woff2') format('woff2'),
-    url('pokemonhollow-webfont.woff') format('woff');
+  font-family: "pokemon_hollownormal";
+  src: url("pokemonhollow-webfont.woff2") format("woff2"), url("pokemonhollow-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'pokemon_solidnormal';
-  src: url('pokemonsolid-webfont.woff2') format('woff2'),
-    url('pokemonsolid-webfont.woff') format('woff');
+  font-family: "pokemon_solidnormal";
+  src: url("pokemonsolid-webfont.woff2") format("woff2"), url("pokemonsolid-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 .navbar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   background-color: #E3350D;
   height: 65px;
   list-style-type: none;
-  font-family: 'pokemon_hollownormal';
+  font-family: "pokemon_hollownormal";
   margin-left: 160px;
   width: 1000px;
   z-index: 5;
@@ -34,7 +31,7 @@ li {
 }
 
 li:nth-child(odd) {
-  font-family: 'pokemon_solidnormal';
+  font-family: "pokemon_solidnormal";
   background-color: red;
   border-bottom: 5px solid;
   border-bottom-color: #720000;
@@ -43,7 +40,7 @@ li:nth-child(odd) {
 }
 
 li:nth-child(even) {
-  font-family: 'pokemon_solidnormal';
+  font-family: "pokemon_solidnormal";
   background-color: blue;
   border-bottom: 5px solid;
   border-bottom-color: #00008b;
@@ -55,7 +52,6 @@ img:hover {
   opacity: 0.2;
 }
 
-
 li:hover:nth-child(odd) {
   background-color: #720000;
 }
@@ -64,15 +60,15 @@ li:hover:nth-child(even) {
   background-color: #00008b;
 }
 
-.navbar>div {
+.navbar > div {
   padding: 1em;
-  font-family: 'pokemon_hollownormal';
+  font-family: "pokemon_hollownormal";
 }
 
 .header {
-  display: grid
-  grid template-columns: 1fr;
-  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #fffff;
   color: #8b0000;
   padding: 5px;
   font-size: 20px;
@@ -101,7 +97,7 @@ button {
   width: 160px;
   height: 100px;
   border-color: white;
-  font-family: 'pokemon_solidnormal'
+  font-family: "pokemon_solidnormal";
 }
 
 .btn-pokedex {
@@ -124,11 +120,10 @@ button {
 }
 
 p {
-  font-family: 'pokemon_solidnormal';
+  font-family: "pokemon_solidnormal";
   color: #E3350D;
   font-size: 2.1em;
   text-align: center;
-  color: blue;
 }
 
 a {
@@ -152,6 +147,7 @@ a {
   z-index: 0;
   left: 370px;
 }
+
 .img3 {
   width: 20px;
   height: 20px;
@@ -159,6 +155,7 @@ a {
   z-index: 0;
   left: 515px;
 }
+
 .img4 {
   width: 20px;
   height: 20px;
@@ -166,6 +163,7 @@ a {
   z-index: 0;
   left: 660px;
 }
+
 .img5 {
   width: 20px;
   height: 20px;
@@ -173,6 +171,7 @@ a {
   z-index: 0;
   left: 800px;
 }
+
 .img6 {
   width: 20px;
   height: 20px;
@@ -180,6 +179,7 @@ a {
   z-index: 0;
   left: 940px;
 }
+
 .img7 {
   width: 20px;
   height: 20px;
@@ -193,15 +193,12 @@ a {
   color: yellow;
 }
 
-
-
 #atk {
   font-family: pokemon_solidnormal;
   color: yellow;
   font-size: 2em;
   text-align: center;
 }
-
 
 #hp {
   font-family: pokemon_solidnormal;
@@ -210,7 +207,6 @@ a {
   text-align: center;
 }
 
-
 #def {
   font-family: pokemon_solidnormal;
   color: yellow;
@@ -218,119 +214,10 @@ a {
   text-align: center;
 }
 
-
-
 #abilities {
   font-family: pokemon_solidnormal;
   color: yellow;
   font-size: 2em;
 }
 
-/* .poke-container {
-width: 80%;
-display: block;
-margin: 100px auto;
-text-align: center;
-}
-
-.poke-ball {
-display: inline-block;
-margin: 20px;
-width: 100px;
-height: 100px;
-background: #b71c1c;
-border-radius: 50%;
-box-shadow:  inset 0 -72px 0 -37px #fff, inset 0 -76px 0 -35px #000, 0 0 0 5px #000;
-position: relative;
-transition: .4s;
-transform-origin: bottom center;
-// Remove mobile tab color
--webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-&:before {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #fff;
-  top: 50px;
-  left: 40px;
-  border: 1px solid rgba(0,0,0,.4);
-  box-shadow: 2px 0 0 0 rgba(0,0,0,0.2), 0 0 0 5px #fff, 0 0 0 10px #000;
-}
-
-&:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height:100%;
-  border-radius: 50%;
-  box-shadow:  inset -7px 0 5px 0 rgba(0,0,0,.4);
-}
-
-&:hover {
-  cursor: pointer;
-  animation: anti-wiggle 1s ease-in-out;
-}
-
-&:hover:after {
-  animation: wiggle 1s ease-in-out;
-}
-
-&:focus, &:active {
-  outline: 0;
-}
-
-}
-
-@keyframes wiggle {
-20% {
-  box-shadow: inset -5px 0 5px 0 rgba(0,0,0,.4);
-  transform: rotate(7deg);
-}
-
-40% {
-  box-shadow: inset -11px 0 5px 0 rgba(0,0,0,.4);
-  transform: rotate(-14deg);
-}
-
-60% {
-  box-shadow: inset -5px 0 5px 0 rgba(0,0,0,.4);
-  transform: rotate(4deg);
-}
-
-80% {
-  box-shadow: inset -8px 0 5px 0 rgba(0,0,0,.4);
-  transform: rotate(-2deg);
-}
-
-100% {
-  box-shadow: inset -7px 0 5px 0 rgba(0,0,0,.4);
-  transform: rotate(0deg);
-}
-}
-
-@keyframes anti-wiggle {
-20% {
-  transform: translateX(4px) rotate(-7deg);
-}
-
-40% {
-  transform: translateX(-8px)  rotate(14deg);
-}
-
-60% {
-  transform: translateX(2px)  rotate(-4deg);
-}
-
-80% {
-  transform: translateX(-1px)  rotate(2deg);
-}
-
-100% {
-  transform: translateX(0px) rotate(0deg);
-}
-}
+/*# sourceMappingURL=style.scss.map */
